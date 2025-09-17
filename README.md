@@ -55,45 +55,43 @@ Let `iters` be the 0-based iteration index, `n_iter` the total number of iterati
 
 * **`linear_inc_l`** (linear increase over first `l` steps, then fixed to `B`)
 
-  $$
-  S =
+  
+  $$S =
   \begin{cases}
   \left\lceil B \cdot \frac{\text{iters}+1}{l} \right\rceil, & \text{iters} < l\\
   B, & \text{iters} \ge l
-  \end{cases}
-  $$
+  \end{cases}$$
+
 
   Set `l` via `--sel_l_iter`.
 
 * **`linear_inc_total`** (linear increase across total schedule)
 
-  $$
-  S = \left\lceil B \cdot \frac{\text{iters}+1}{n\_iter} \right\rceil
-  $$
+  $$S = \left\lceil B \cdot \frac{\text{iters}+1}{n\_iter} \right\rceil$$
 
 * **`linear_dec_l`** (linear decrease over first `l` steps, then fixed to 1)
 
-  $$
-  S =
+  
+  $$S =
   \begin{cases}
   \left\lceil B \cdot \left(1 - \frac{\text{iters}}{l}\right) \right\rceil, & \text{iters} < l\\
   1, & \text{iters} \ge l
-  \end{cases}
-  $$
+  \end{cases}$$
+  
 
   Set `l` via `--sel_l_iter`.
 
 * **`linear_dec_total`** (linear decrease across total schedule)
 
-  $$
-  S = \left\lceil B \cdot \left(1 - \frac{\text{iters}}{n\_iter}\right) \right\rceil
-  $$
+  
+  $$S = \left\lceil B \cdot \left(1 - \frac{\text{iters}}{n\_iter}\right) \right\rceil$$
+  
 
 * **`sigmoid`** (sigmoid-shaped schedule)
 
-  $$
-  S = \left\lceil B \cdot \text{sigmoid\_decay}(\text{iters}; a, b) \right\rceil,
-  $$
+  
+  $$S = \left\lceil B \cdot \text{sigmoid\_decay}(\text{iters}; a, b) \right\rceil,$$
+  
 
   where `sigmoid_decay` is the same function referenced in the paper/code; set `a,b` via `--sig_a --sig_b`.
 
