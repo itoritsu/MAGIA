@@ -1,10 +1,7 @@
 # MAGIA: Sensing Per-Image Signals from Single-Round Averaged Gradients for Label-Inference-Free Gradient Inversion
 
-> **This implementation is derived from the paper**  
-> **“MAGIA: SENSING PER-IMAGE SIGNALS FROM SINGLE-ROUND AVERAGED GRADIENTS FOR LABEL-INFERENCE-FREE GRADIENT INVERSION.”**  
-> It realizes the optimization objective and the subset-selection schedule described in the paper’s main text and appendix.
+**This implementation is derived from the paper**  
 
----
 
 
 ## 1. Overview
