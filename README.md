@@ -87,16 +87,6 @@ Let `iters` be the 0-based iteration index, `n_iter` the total number of iterati
   $$S = \left\lceil B \cdot \left(1 - \frac{\text{iters}}{n\_iter}\right) \right\rceil$$
   
 
-* **`sigmoid`** (sigmoid-shaped schedule)
-
-  
-  $$S = \left\lceil B \cdot \text{sigmoid\_decay}(\text{iters}; a, b) \right\rceil,$$
-  
-
-  where `sigmoid_decay` is the same function referenced in the paper/code; set `a,b` via `--sig_a --sig_b`.
-
-> These modes correspond one-to-one to the selection schedules listed in the appendix of the MAGIA paper (constant, linear warm-up/decay, total-horizon linear, and sigmoid schedule).
-
 ---
 
 ## 4. Command-Line Usage
