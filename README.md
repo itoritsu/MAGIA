@@ -143,7 +143,7 @@ python main_MAGIA_sel.py \
 If you find this implementation useful, please cite the MAGIA paper:
 
 ```
-FedIA: A Plug-and-Play Importance-Aware Gradient Pruning Aggregation Method for Domain-Robust Federated Graph Learning on Node Classification
+MAGIA: Sensing Per-Image Signals from Single-Round Averaged Gradients for Label-Inference-Free Gradient Inversion.
 ```
 
 ---
