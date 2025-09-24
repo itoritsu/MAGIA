@@ -140,7 +140,15 @@ python main_MAGIA_sel.py \
 If you find this implementation useful, please cite the MAGIA paper:
 
 ```
-MAGIA: Sensing Per-Image Signals from Single-Round Averaged Gradients for Label-Inference-Free Gradient Inversion.
+@misc{zhou2025magiasensingperimagesignals,
+      title={MAGIA: Sensing Per-Image Signals from Single-Round Averaged Gradients for Label-Inference-Free Gradient Inversion}, 
+      author={Zhanting Zhou and Jinbo Wang and Zeqin Wu and Fengli Zhang},
+      year={2025},
+      eprint={2509.18170},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.18170}, 
+}
 ```
 
 ---
